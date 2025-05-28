@@ -27,6 +27,24 @@
 #define ADJ 3
 
 / {
+    macros {
+        macro_test: macro_test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp &kp &kp>;
+
+            label = "MACRO_TEST";
+        };
+
+        macroAltF4: macroAltF4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT>, <&macro_press>, <&kp F4>;
+
+            label = "MACROALTF4";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -40,7 +58,7 @@
             bindings = <
 &lt 3 TAB  &kp Q  &kp W  &kp E  &kp R         &kp T             &kp T                &kp POUND               &kp Y               &kp U        &kp I           &kp O      &kp P      &kp RIGHT_BRACKET
            &kp A  &kp S  &kp D  &kp F         &kp G             &lt 3 DELETE         &kp LEFT_BRACKET        &mt LEFT_CONTROL H  &mt LWIN I   &mt LEFT_ALT J  &kp K      &kp L
-           &kp Y  &kp X  &kp C  &kp V         &kp B             &mt INSERT ESCAPE    &kp N                   &kp N               &kp M        &kp DOT         &kp COMMA  &kp MINUS
+           &kp Y  &kp X  &kp C  &kp V         &kp B             &mt INSERT ESCAPE    &macroAltF4             &kp N               &kp M        &kp DOT         &kp COMMA  &kp MINUS
                                 &lt 1 RETURN  &mt LSHIFT SPACE  &lt 2 TAB            &lt LWR K_CONTEXT_MENU  &kp BACKSPACE       &lt RSE DEL
             >;
         };
@@ -88,6 +106,24 @@
             &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &none           &none         &none         &none         &none         &none         &none
                                                               &bt BT_DISC 0    &kp A            &soft_off       &trans        &none         &trans
             >;
+        };
+
+        funktionstasten {
+            bindings = <
+&trans  &trans  &trans  &trans  &kp F8  &kp F12  &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &kp F7  &kp F11  &macro_test    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans   &trans         &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans   &trans         &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        back_to_default {
+            if-layers = <1 2 3>;
+            then-layer = <0>;
         };
     };
 };
