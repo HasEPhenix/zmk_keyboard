@@ -56,10 +56,10 @@
             //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&lt 3 TAB  &kp Q           &kp W           &kp E               &kp R               &kp T               &kp T                &kp POUND                &kp RIGHT_BRACKET              &kp Y        &kp U           &kp I               &kp O      &kp P
-           &lt 4 A         &kp S           &kp D               &kp F               &kp G               &sk LEFT_ALT         &mt INSERT LEFT_BRACKET  &mt LEFT_CONTROL LEFT_BRACKET  &mt LWIN H   &mt LEFT_ALT J  &mt K LEFT_COMMAND  &kp L
-           &mt LEFT_GUI Y  &mt LEFT_GUI X  &mt LEFT_COMMAND C  &mt LEFT_COMMAND V  &mt LEFT_COMMAND B  &mt INSERT ESCAPE    &macroAltF4              &mt C_BRIGHTNESS_DEC MINUS     &kp N        &kp M           &kp DOT             &kp COMMA
-                                                               &lt 1 RETURN        &mt LSHIFT SPACE    &lt 2 TAB            &lt LWR K_CONTEXT_MENU   &kp BACKSPACE                  &lt RSE DEL
+&lt 3 TAB  &kp Q           &kp W           &kp E               &kp R               &kp T               &kp T                &kp POUND                &kp RIGHT_BRACKET              &kp Y       &kp U           &kp I               &kp O      &kp P
+           &lt 0 A         &kp S           &kp D               &kp F               &kp G               &sk LEFT_ALT         &mt INSERT LEFT_BRACKET  &mt LEFT_CONTROL LEFT_BRACKET  &mt LWIN H  &mt LEFT_ALT J  &mt K LEFT_COMMAND  &kp L
+           &mt LEFT_GUI Y  &mt LEFT_GUI X  &mt LEFT_COMMAND C  &mt LEFT_COMMAND V  &mt LEFT_COMMAND B  &mt INSERT ESCAPE    &macroAltF4              &mt C_BRIGHTNESS_DEC MINUS     &kp N       &kp M           &kp DOT             &kp COMMA
+                                                               &lt 1 RETURN        &mt LSHIFT SPACE    &lt 2 TAB            &lt 1 K_CONTEXT_MENU     &kp BACKSPACE                  &lt 2 DEL
             >;
         };
 
@@ -71,10 +71,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_UP     &kp PAGE_UP    &kp HOME   &kp HOME      &kp AT_SIGN        &kp F6     &kp F7    &kp F8       &kp F9    &kp F10   &kp F11          &mt RGUI F12
-        &kp LEFT              &kp DOWN            &kp UP_ARROW   &kp RIGHT  &kp QUESTION  &kp EXCLAMATION    &kp CARET  &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-        &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN2  &kp PAGE_DOWN  &kp END    &trans        &trans             &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &trans
-                                                                 &trans     &trans        &trans             &trans     &trans    &lt ADJ DEL
+&trans  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_UP     &kp PAGE_UP    &kp HOME   &kp HOME      &kp AT_SIGN        &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11          &mt RGUI F12
+        &kp LEFT              &kp DOWN            &kp UP_ARROW   &kp RIGHT  &kp QUESTION  &kp EXCLAMATION    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
+        &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN2  &kp PAGE_DOWN  &kp END    &trans        &trans             &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
+                                                                 &trans     &trans        &trans             &trans     &trans    &lt 3 DEL
             >;
         };
 
@@ -89,7 +89,7 @@
 &trans  &kp KP_NUM    &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS         &trans
         &kp NUMBER_1  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
         &trans        &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
-                                                  &trans     &trans     &lt ADJ RET     &lt ADJ ESC   &trans    &trans
+                                                  &trans     &trans     &lt 3 RET       &lt 3 ESC     &trans    &trans
             >;
         };
 
@@ -108,12 +108,12 @@
             >;
         };
 
-        funktionstasten {
+        Zahlenzauber {
             bindings = <
-&trans  &trans     &trans       &kp F2      &kp F8  &kp F12      &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &kp LG(D)  &kp LG(TAB)  &kp LA(F4)  &trans  &kp LG(TAB)  &macro_test    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans     &kp LA(F4)   &kp F7      &trans  &trans       &trans         &trans  &trans  &trans  &trans  &trans  &trans
-                                            &trans  &trans       &trans         &trans  &trans  &trans
+&kp N0  &kp N6        &kp N7    &kp N8        &kp N9  &kp N0  &kp KP_MULTIPLY    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &kp N1        &kp N2    &kp N3        &kp N4  &kp N5  &kp KP_DIVIDE      &trans  &trans  &trans  &trans  &trans  &trans
+        &kp KP_MINUS  &kp PLUS  &kp KP_EQUAL  &kp N9  &kp N0  &trans             &trans  &trans  &trans  &trans  &trans  &trans
+                                              &trans  &trans  &trans             &trans  &trans  &trans
             >;
         };
     };
