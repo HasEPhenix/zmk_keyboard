@@ -71,10 +71,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp UNDER       &kp F1    &kp PAGE_UP    &kp PAGE_UP    &kp HOME   &kp AT_SIGN        &kp F6     &kp F7    &kp F8       &kp F9    &kp F10   &kp F11          &mt RGUI F12
-        &kp LEFT        &kp DOWN  &kp UP_ARROW   &kp RIGHT      &kp RIGHT  &kp QMARK          &kp CARET  &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-        &mt LALT EQUAL  &kp N1    &kp PAGE_DOWN  &kp PAGE_DOWN  &kp END    &kp EXCLAMATION    &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &trans
-                                                 &lt ADJ TAB    &trans     &trans             &trans     &trans    &lt ADJ DEL
+&trans  &kp UNDER       &kp F1    &kp PAGE_UP    &kp HOME     &kp HOME   &kp AT_SIGN        &kp F6     &kp F7    &kp F8       &kp F9    &kp F10   &kp F11          &mt RGUI F12
+        &kp LEFT        &kp DOWN  &kp UP_ARROW   &kp RIGHT    &kp RIGHT  &kp QMARK          &kp CARET  &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR  &mt RCTRL MINUS
+        &mt LALT EQUAL  &kp N1    &kp PAGE_DOWN  &kp END      &kp END    &kp EXCLAMATION    &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &trans
+                                                 &lt ADJ TAB  &trans     &trans             &trans     &trans    &lt ADJ DEL
             >;
         };
 
