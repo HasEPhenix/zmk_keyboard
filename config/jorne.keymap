@@ -56,9 +56,9 @@
             //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&lt 3 TAB  &kp Q    &kp W  &kp E  &kp R         &kp T             &kp T                &kp POUND                &kp Y                          &kp U        &kp I           &kp O               &kp P      &kp RIGHT_BRACKET
+&lt 3 TAB  &kp Q    &kp W  &kp E  &kp R         &kp T             &kp T                &kp POUND                &kp RIGHT_BRACKET              &kp Y        &kp U           &kp I               &kp O      &kp P
            &lt 4 A  &kp S  &kp D  &kp F         &kp G             &lt 3 DELETE         &mt INSERT LEFT_BRACKET  &mt LEFT_CONTROL LEFT_BRACKET  &mt LWIN H   &mt LEFT_ALT J  &mt K LEFT_COMMAND  &kp L
-           &kp Y    &kp X  &kp C  &kp V         &kp B             &mt INSERT ESCAPE    &macroAltF4              &kp N                          &kp M        &kp DOT         &kp COMMA           &kp MINUS
+           &kp Y    &kp X  &kp C  &kp V         &kp B             &mt INSERT ESCAPE    &macroAltF4              &mt C_BRIGHTNESS_DEC MINUS     &kp N        &kp M           &kp DOT             &kp COMMA
                                   &lt 1 RETURN  &mt LSHIFT SPACE  &lt 2 TAB            &lt LWR K_CONTEXT_MENU   &kp BACKSPACE                  &lt RSE DEL
             >;
         };
