@@ -63,7 +63,7 @@
             >;
         };
 
-        Pfeile {
+        ARROWS {
             // -----------------------------------------------------------------------------------------
             // |     |  _  |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |
             //       |  +  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  -  |
@@ -71,14 +71,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp UNDER  &kp F1    &kp PAGE_UP    &kp HOME   &kp HOME      &kp AT_SIGN        &kp F6     &kp F7    &kp F8       &kp F9    &kp F10   &kp F11          &mt RGUI F12
-        &kp LEFT   &kp DOWN  &kp UP_ARROW   &kp RIGHT  &kp QUESTION  &kp EXCLAMATION    &kp CARET  &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-        &trans     &kp N1    &kp PAGE_DOWN  &kp END    &trans        &trans             &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &trans
-                                            &trans     &trans        &trans             &trans     &trans    &lt ADJ DEL
+&trans  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_UP     &kp PAGE_UP    &kp HOME   &kp HOME      &kp AT_SIGN        &kp F6     &kp F7    &kp F8       &kp F9    &kp F10   &kp F11          &mt RGUI F12
+        &kp LEFT              &kp DOWN            &kp UP_ARROW   &kp RIGHT  &kp QUESTION  &kp EXCLAMATION    &kp CARET  &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR  &mt RCTRL MINUS
+        &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN2  &kp PAGE_DOWN  &kp END    &trans        &trans             &kp N6     &kp N7    &kp N8       &kp N9    &kp N0    &trans
+                                                                 &trans     &trans        &trans             &trans     &trans    &lt ADJ DEL
             >;
         };
 
-        raise_layer {
+        NUMBERS {
             // -----------------------------------------------------------------------------------------
             // |     | NMLK |  /  |  7  |  8  |  9  |  -  |   | VOLU| HOME| PRSC| PGUP| SCLK| CLCK|     |
             //       | CTRL |  *  |  4  |  5  |  6  |  +  |   | MUT | LEFT|  UP | RGHT| INS | APP |
@@ -86,10 +86,10 @@
             //                          |     |     | ADJ |   | ADJ |     |     |
 
             bindings = <
-&trans  &kp KP_NUM   &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS         &trans
-        &kp LA(TAB)  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-        &trans       &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
-                                                 &trans     &trans     &lt ADJ RET     &lt ADJ ESC   &trans    &trans
+&trans  &kp KP_NUM    &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS         &trans
+        &kp NUMBER_1  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
+        &trans        &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
+                                                  &trans     &trans     &lt ADJ RET     &lt ADJ ESC   &trans    &trans
             >;
         };
 
