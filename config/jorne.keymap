@@ -27,24 +27,6 @@
 #define ADJ 3
 
 / {
-    macros {
-        macro_test: macro_test {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp &kp &kp>;
-
-            label = "MACRO_TEST";
-        };
-
-        macroAltF4: macroAltF4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT>, <&macro_press>, <&kp F4>;
-
-            label = "MACROALTF4";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -112,12 +94,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        back_to_default {
-            if-layers = <1 3 3>;
-            then-layer = <0>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
