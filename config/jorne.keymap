@@ -80,7 +80,7 @@
 &sys_reset  &bootloader     &none            &trans           &out OUT_TOG     &none            &soft_off       &soft_off     &none         &out OUT_TOG  &none         &none         &bootloader  &sys_reset
             &bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
             &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &none           &none         &none         &none         &none         &none         &none
-                                                              &bt BT_DISC 0    &bt BT_DISC 4    &soft_off       &trans        &none         &trans
+                                                              &bt BT_DISC 0    &bt BT_DISC 4    &soft_off       &soft_off     &none         &trans
             >;
         };
 
