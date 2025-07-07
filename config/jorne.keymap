@@ -92,6 +92,15 @@
                                                                              &kp LA(TAB)  &kp LS(LA(TAB))  &trans    &trans  &trans  &trans
             >;
         };
+
+        Einhand-Alpha {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
