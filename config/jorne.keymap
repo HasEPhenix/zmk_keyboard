@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
 //CONFIG_ZMK_SETTINGS_SAVE_DEBOUNCE=1000
@@ -38,10 +37,10 @@
             //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&lt 3 TAB  &kp Q           &kp W           &kp E    &kp R               &kp T               &kp T           &mt LEFT_SHIFT LEFT_BRACKET  &kp Z          &kp U      &kp I    &kp O      &kp P          &lt 3 RIGHT_BRACKET
-           &lt 0 A         &kp S           &kp D    &lt 4 F             &kp G               &sk LEFT_ALT    &lt 3 ESCAPE                 &kp H          &kp J      &kp K    &kp L      &kp SEMICOLON
-           &mt LEFT_GUI Y  &mt LEFT_GUI X  &lt 2 C  &mt LEFT_COMMAND V  &mt LEFT_COMMAND B  &kp INSERT      &kp INSERT                   &kp N          &kp M      &kp DOT  &kp COMMA  &kp MINUS
-                                                    &lt 1 RETURN        &mt LSHIFT SPACE    &lt 3 TAB       &lt 1 K_CONTEXT_MENU         &kp BACKSPACE  &lt 2 DEL
+&sk LEFT_COMMAND  &kp Q           &kp W           &kp E    &kp R                     &kp T               &sk LEFT_CONTROL    &mt LEFT_SHIFT LEFT_BRACKET  &kp Z          &kp U      &kp I    &kp O      &kp P          &lt 3 RIGHT_BRACKET
+                  &lt 0 A         &kp S           &lt 6 D  &lt 4 F                   &kp G               &sk LEFT_ALT        &lt 3 ESCAPE                 &kp H          &kp J      &kp K    &kp L      &kp SEMICOLON
+                  &mt LEFT_GUI Y  &mt LEFT_GUI X  &lt 2 C  &mt LEFT_COMMAND V        &mt LEFT_COMMAND B  &kp INSERT          &kp INSERT                   &kp N          &kp M      &kp DOT  &kp COMMA  &kp MINUS
+                                                           &mt LEFT_SHIFT BACKSPACE  &lt 5 SPACE         &lt 1 TAB           &lt 1 K_CONTEXT_MENU         &kp BACKSPACE  &lt 2 DEL
             >;
         };
 
@@ -77,28 +76,37 @@
             //                          |     |     |     |     |     |     |     |
 
             bindings = <
-&sys_reset  &bootloader     &none            &trans           &out OUT_TOG     &none            &trans          &soft_off     &none         &out OUT_TOG  &none         &none         &bootloader  &sys_reset
-            &bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-            &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &none           &none         &none         &none         &none         &none         &none
-                                                              &bt BT_DISC 0    &bt BT_DISC 4    &soft_off       &soft_off     &none         &trans
+&bt BT_CLR_ALL  &bootloader     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &soft_off     &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 1  &bt BT_SEL 0  &trans  &bt BT_CLR_ALL
+                &trans          &bt BT_DISC 0    &bt BT_DISC 1    &bt BT_DISC 2    &bt BT_DISC 3    &bt BT_DISC 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans
+                &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &none            &none         &none         &none         &none         &none         &none
+                                                                  &trans           &trans           &soft_off        &soft_off     &none         &trans
             >;
         };
 
         Friedrich {
             bindings = <
-&trans  &trans  &kp C_MEDIA_COMPUTER  &kp LG(C_AL_DOCUMENTS)                 &trans       &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &kp LA(F4)            &kp LG(D)                              &trans       &kp LEFT_GUI     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans                &kp LG(C_AC_DESKTOP_SHOW_ALL_WINDOWS)  &trans       &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                                                             &kp LA(TAB)  &kp LS(LA(TAB))  &trans    &trans  &trans  &trans
+&trans  &trans  &kp C_MEDIA_COMPUTER  &kp LG(C_AL_DOCUMENTS)                 &trans         &trans     &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &kp LA(F4)            &kp LG(D)                              &trans         &trans     &trans         &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans                &kp LG(C_AC_DESKTOP_SHOW_ALL_WINDOWS)  &trans         &trans     &trans         &trans  &trans  &trans  &trans  &trans  &trans
+                                                                             &kp ALT_ERASE  &kp ENTER  &kp LS(TAB)    &trans  &trans  &trans
             >;
         };
 
         Einhand-Alpha {
             bindings = <
-&kp BSLH  &kp Z  &kp U  &kp I      &kp O    &kp P      &kp LBKT    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-          &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp APOS    &trans  &trans  &trans  &trans  &trans  &trans
-          &kp N  &kp M  &kp COMMA  &kp DOT  &kp MINUS  &kp RBKT    &trans  &trans  &trans  &trans  &trans  &trans
-                                   &trans   &trans     &trans      &trans  &trans  &trans
+&kp BSLH  &kp Z             &kp U  &kp I  &kp O      &kp P     &kp LBKT     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+          &kp H             &kp J  &kp K  &kp L      &kp SEMI  &kp APOS     &trans  &trans  &trans  &trans  &trans  &trans
+          &kp LEFT_BRACKET  &kp N  &kp M  &kp COMMA  &kp DOT   &kp MINUS    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans     &trans    &trans       &trans  &trans  &trans
+            >;
+        };
+
+        DIANA {
+            bindings = <
+&trans  &kp AT_SIGN  &trans  &trans  &trans           &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans       &trans  &trans  &kp LG(D)        &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans
+        &trans       &trans  &trans  &trans           &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                     &kp LS(LG(TAB))  &kp LG(TAB)  &kp LA(F4)    &trans  &trans  &trans
             >;
         };
     };
