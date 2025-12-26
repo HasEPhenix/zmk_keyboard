@@ -112,10 +112,10 @@
 
         SAMMY {
             bindings = <
-&trans  &trans  &kp INT9  &kp INT8  &kp INT7                  &kp INT6  &kp INT5    &trans                &trans            &trans  &trans  &trans  &trans  &trans
-        &trans  &trans    &kp INT1  &kp INT2                  &kp INT3  &kp INT4    &trans                &trans            &trans  &trans  &trans  &trans
-        &trans  &trans    &trans    &sk LA(LG(LEFT_COMMAND))  &trans    &trans      &trans                &trans            &trans  &trans  &trans  &trans
-                                    &sk LA(LEFT_COMMAND)      &trans    &trans      &sk LA(LEFT_CONTROL)  &sk LG(LEFT_ALT)  &trans
+&trans  &trans  &kp INT9  &kp INT8  &kp INT7  &kp INT6  &kp INT5    &trans                &trans            &trans  &trans  &trans  &trans  &trans
+        &trans  &trans    &kp INT1  &kp INT2  &kp INT3  &kp INT4    &trans                &trans            &trans  &trans  &trans  &trans
+        &trans  &trans    &trans    &trans    &trans    &trans      &trans                &trans            &trans  &trans  &trans  &trans
+                                    &trans    &trans    &trans      &sk LA(LEFT_CONTROL)  &sk LG(LEFT_ALT)  &trans
             >;
         };
 
