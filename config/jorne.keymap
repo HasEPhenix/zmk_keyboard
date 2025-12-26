@@ -54,7 +54,7 @@
             bindings = <
 &trans  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_UP     &kp PAGE_UP    &kp HOME   &kp HOME      &kp AT_SIGN        &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11          &mt RGUI F12
         &kp LEFT              &kp DOWN            &kp UP_ARROW   &kp RIGHT  &kp QUESTION  &kp EXCLAMATION    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-        &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN2  &kp PAGE_DOWN  &kp END    &mo 4         &trans             &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
+        &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN2  &kp PAGE_DOWN  &kp END    &mo 4         &mo 5              &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
                                                                  &trans     &trans        &trans             &trans     &trans    &lt 3 DEL
             >;
         };
@@ -85,19 +85,19 @@
 
         Friedrich {
             bindings = <
-&trans  &trans  &kp C_MEDIA_COMPUTER  &kp LG(C_AL_DOCUMENTS)                 &trans         &trans     &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &kp LA(F4)            &kp LG(D)                              &trans         &trans     &trans         &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans                &kp LG(C_AC_DESKTOP_SHOW_ALL_WINDOWS)  &trans         &trans     &trans         &trans  &trans  &trans  &trans  &trans  &trans
-                                                                             &kp ALT_ERASE  &kp ENTER  &kp LS(TAB)    &trans  &trans  &trans
+&trans  &trans  &kp C_MEDIA_COMPUTER  &kp LG(C_AL_DOCUMENTS)                 &trans         &trans     &trans         &trans      &trans   &trans       &trans     &trans  &trans  &trans
+        &trans  &kp LA(F4)            &kp LG(D)                              &trans         &trans     &trans         &kp ESCAPE  &kp TAB  &kp LS(TAB)  &kp ENTER  &trans  &trans
+        &trans  &trans                &kp LG(C_AC_DESKTOP_SHOW_ALL_WINDOWS)  &trans         &trans     &trans         &trans      &trans   &trans       &trans     &trans  &trans
+                                                                             &kp ALT_ERASE  &kp ENTER  &kp LS(TAB)    &trans      &trans   &trans
             >;
         };
 
         Einhand-Alpha {
             bindings = <
-&kp BSLH  &kp Z             &kp U  &kp I  &kp O   &kp P      &kp LBKT     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-          &kp H             &kp J  &kp K  &kp L   &kp SEMI   &kp APOS     &trans  &trans  &trans  &trans  &trans  &trans
-          &kp LEFT_BRACKET  &kp B  &kp N  &kp M   &kp COMMA  &kp MINUS    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans  &trans     &trans       &trans  &trans  &trans
+&kp BSLH  &kp Z             &kp U      &kp I  &kp O   &kp P   &kp LBKT      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+          &kp COLON         &kp H      &kp J  &kp K   &kp L   &kp APOS      &trans  &trans  &trans  &trans  &trans  &trans
+          &kp LEFT_BRACKET  &kp COMMA  &kp B  &kp N   &kp M   &kp PERIOD    &trans  &trans  &trans  &trans  &trans  &trans
+                                              &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
 
