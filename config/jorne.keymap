@@ -54,8 +54,8 @@
             bindings = <
 &trans  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_UP     &kp PAGE_UP    &kp HOME   &kp HOME      &kp AT_SIGN        &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11          &mt RGUI F12
         &kp LEFT              &kp DOWN            &kp UP_ARROW   &kp RIGHT  &kp QUESTION  &kp EXCLAMATION    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-        &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN2  &kp PAGE_DOWN  &kp END    &mo 4         &mo 5              &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
-                                                                 &trans     &trans        &trans             &trans     &trans    &lt 3 DEL
+        &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN2  &kp PAGE_DOWN  &kp END    &trans        &trans             &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
+                                                                 &mo 5      &trans        &trans             &trans     &trans    &lt 3 DEL
             >;
         };
 
