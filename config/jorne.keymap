@@ -85,10 +85,10 @@
 
         Friedrich {
             bindings = <
-&trans  &trans  &kp C_MEDIA_COMPUTER  &kp LG(C_AL_DOCUMENTS)                 &trans         &trans     &trans         &trans      &trans   &trans       &trans     &trans  &trans  &trans
-        &trans  &kp LA(F4)            &kp LG(D)                              &trans         &trans     &trans         &kp ESCAPE  &kp TAB  &kp LS(TAB)  &kp ENTER  &trans  &trans
-        &trans  &trans                &kp LG(C_AC_DESKTOP_SHOW_ALL_WINDOWS)  &trans         &trans     &trans         &trans      &trans   &trans       &trans     &trans  &trans
-                                                                             &kp ALT_ERASE  &kp ENTER  &kp LS(TAB)    &trans      &trans   &trans
+&trans  &trans  &kp C_MEDIA_COMPUTER  &kp LG(C_AL_DOCUMENTS)                 &trans  &trans     &trans         &trans      &trans   &trans       &trans     &trans  &trans  &trans
+        &trans  &kp LA(F4)            &kp LG(D)                              &trans  &trans     &trans         &kp ESCAPE  &kp TAB  &kp LS(TAB)  &kp ENTER  &trans  &trans
+        &trans  &trans                &kp LG(C_AC_DESKTOP_SHOW_ALL_WINDOWS)  &trans  &trans     &trans         &trans      &trans   &trans       &trans     &trans  &trans
+                                                                             &trans  &kp ENTER  &kp LS(TAB)    &trans      &trans   &trans
             >;
         };
 
