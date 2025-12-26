@@ -103,7 +103,7 @@
 
         DIANA {
             bindings = <
-&trans  &kp AT_SIGN  &trans  &trans  &trans           &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp AT_SIGN  &trans  &trans  &trans           &trans       &kp B         &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans       &trans  &trans  &kp LG(D)        &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans
         &trans       &trans  &trans  &trans           &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans
                                      &kp LS(LG(TAB))  &kp LG(TAB)  &kp LA(F4)    &trans  &trans  &trans
@@ -116,15 +116,6 @@
         &trans  &trans    &kp INT1  &kp INT2  &kp INT3  &kp INT4    &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans    &trans    &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans    &trans    &trans      &trans  &trans  &trans
-            >;
-        };
-
-        Hanna {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
