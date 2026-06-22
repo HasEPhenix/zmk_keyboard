@@ -37,10 +37,10 @@
             //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&sk ESCAPE  &lt 3 Q           &kp W           &kp E    &kp R                     &kp T               &sk LEFT_CONTROL    &kp Z         &kp U         &kp I      &kp O    &kp P      &lt 3 RIGHT_BRACKET  &lt 3 RIGHT_BRACKET
-            &kp A             &lt 7 S         &lt 6 D  &lt 4 F                   &kp G               &sk LEFT_ALT        &kp ESCAPE    &kp H         &kp J      &kp K    &kp L      &kp SEMICOLON
-            &mt LEFT_GUI DOT  &mt LEFT_GUI Y  &lt 2 X  &mt LEFT_COMMAND C        &mt LEFT_COMMAND V  &lt 5 B             &kp INSERT    &kp N         &kp M      &kp DOT  &kp COMMA  &kp MINUS
-                                                       &mt LEFT_SHIFT BACKSPACE  &lt 1 SPACE         &lt 2 TAB           &lt 1 ESCAPE  &lt 2 DELETE  &lt 2 DEL
+&sk ESCAPE  &lt 3 Q           &kp W           &kp E               &kp R                     &kp T               &sk LEFT_CONTROL    &kp Z         &kp U         &kp I      &kp O    &kp P      &lt 3 RIGHT_BRACKET  &lt 3 RIGHT_BRACKET
+            &kp A             &lt 7 S         &lt 6 D             &lt 4 F                   &kp G               &kp CAPSLOCK        &kp CAPSLOCK  &kp H         &kp J      &kp K    &kp L      &kp SEMICOLON
+            &mt LEFT_GUI DOT  &mt LEFT_GUI Y  &mt LEFT_COMMAND X  &lt 2 C                   &mt LEFT_COMMAND V  &lt 5 B             &kp CAPSLOCK  &kp N         &kp M      &kp DOT  &kp COMMA  &kp MINUS
+                                                                  &mt LEFT_SHIFT BACKSPACE  &lt 1 SPACE         &lt 2 TAB           &lt 1 ESCAPE  &lt 2 DELETE  &lt 2 DEL
             >;
         };
 
@@ -52,19 +52,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_UP     &kp PAGE_UP     &kp HOME   &kp HOME      &kp AT_SIGN        &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11          &mt RGUI F12
-        &kp LEFT              &kp UP_ARROW        &kp DOWN_ARROW  &kp RIGHT  &kp QUESTION  &kp EXCLAMATION    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-        &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN2  &kp PAGE_DOWN   &kp END    &trans        &trans             &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
-                                                                  &trans     &trans        &trans             &trans     &trans    &lt 3 DEL
+&trans  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_UP     &kp PAGE_UP     &kp HOME   &kp HOME      &kp AT_SIGN        &kp RET    &kp RET    &kp RET    &kp RET   &kp RET  &kp F11  &mt RGUI F12
+        &kp LEFT              &kp UP_ARROW        &kp DOWN_ARROW  &kp RIGHT  &kp QUESTION  &kp EXCLAMATION    &kp CARET  &kp LSHFT  &kp LGUI   &kp LALT  &kp RET  &kp RET
+        &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN2  &kp PAGE_DOWN   &kp END    &trans        &trans             &kp RET    &kp RET    &kp RET    &kp RET   &kp RET  &trans
+                                                                  &trans     &trans        &trans             &trans     &trans     &lt 3 DEL
             >;
         };
 
         Zahlenzauber {
             bindings = <
-&kp N0  &kp N6        &kp N7    &kp N8  &kp N9          &kp N0  &kp KP_MULTIPLY    &trans            &kp F9            &kp F10       &kp F11  &kp F12  &trans  &trans
-        &kp N1        &kp N2    &kp N3  &kp N4          &kp N5  &kp KP_DIVIDE      &sk LEFT_CONTROL  &kp F5            &kp F6        &kp F7   &kp F8   &trans
-        &kp KP_MINUS  &kp PLUS  &trans  &kp KP_EQUAL    &kp N0  &trans             &kp LEFT_GUI      &kp F1            &kp F2        &kp F3   &kp F4   &trans
-                                        &kp LEFT_SHIFT  &trans  &trans             &kp INS           &kp LEFT_CONTROL  &kp LEFT_ALT
+&kp N0  &kp N6        &kp N7    &kp N8  &kp N9        &kp N0  &kp KP_MULTIPLY    &trans            &kp F9            &kp F10       &kp F11  &kp F12  &trans  &trans
+        &kp N1        &kp N2    &kp N3  &kp N4        &kp N5  &kp KP_DIVIDE      &sk LEFT_CONTROL  &kp F5            &kp F6        &kp F7   &kp F8   &trans
+        &kp KP_MINUS  &kp PLUS  &trans  &kp KP_EQUAL  &kp N0  &trans             &kp LEFT_GUI      &kp F1            &kp F2        &kp F3   &kp F4   &trans
+                                        &trans        &trans  &trans             &kp INS           &kp LEFT_CONTROL  &kp LEFT_ALT
             >;
         };
 
