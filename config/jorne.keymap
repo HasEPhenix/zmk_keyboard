@@ -103,10 +103,10 @@
 
         DIANA {
             bindings = <
-&trans  &kp AT_SIGN                        &trans  &trans  &trans           &trans       &kp B         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans  &trans  &kp LG(D)        &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans
-        &trans                             &trans  &trans  &trans           &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                                                           &kp LS(LG(TAB))  &kp LG(TAB)  &kp LA(F4)    &trans  &trans  &trans
+&trans  &kp AT_SIGN  &trans  &trans  &trans           &trans       &kp B         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans       &trans  &trans  &kp LG(D)        &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans
+        &trans       &trans  &trans  &trans           &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                     &kp LS(LG(TAB))  &kp LG(TAB)  &kp LA(F4)    &trans  &trans  &trans
             >;
         };
 
