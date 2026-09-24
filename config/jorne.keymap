@@ -85,10 +85,10 @@
 
         Friedrich {
             bindings = <
-&trans  &trans      &kp C_MEDIA_COMPUTER  &kp LG(C_AL_DOCUMENTS)                 &trans      &trans     &trans         &trans  &trans          &trans            &trans            &trans        &trans  &trans
-        &kp LA(F4)  &kp LG(D)             &kp LG(D)                              &trans      &trans     &trans         &trans  &sk LEFT_SHIFT  &sk LEFT_COMMAND  &sk LEFT_CONTROL  &sk LEFT_ALT  &trans
-        &trans      &trans                &kp LG(C_AC_DESKTOP_SHOW_ALL_WINDOWS)  &trans      &trans     &trans         &trans  &trans          &trans            &trans            &trans        &trans
-                                                                                 &kp DELETE  &kp ENTER  &kp LS(TAB)    &trans  &trans          &trans
+&trans  &sk LCTRL   &sk LEFT_GUI  &sk LEFT_ALT                           &sk LEFT_SHIFT  &trans     &trans         &trans  &trans          &trans            &trans            &trans        &trans  &trans
+        &kp LA(F4)  &kp LG(D)     &kp LG(D)                              &trans          &trans     &trans         &trans  &sk LEFT_SHIFT  &sk LEFT_COMMAND  &sk LEFT_CONTROL  &sk LEFT_ALT  &trans
+        &trans      &trans        &kp LG(C_AC_DESKTOP_SHOW_ALL_WINDOWS)  &trans          &trans     &trans         &trans  &trans          &trans            &trans            &trans        &trans
+                                                                         &kp DELETE      &kp ENTER  &kp LS(TAB)    &trans  &trans          &trans
             >;
         };
 
@@ -103,10 +103,10 @@
 
         DIANA {
             bindings = <
-&trans  &kp AT_SIGN  &trans  &trans  &trans           &trans       &kp B         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans       &trans  &trans  &kp LG(D)        &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans
-        &trans       &trans  &trans  &trans           &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                                     &kp LG(LA(TAB))  &kp LA(TAB)  &kp LA(F4)    &trans  &trans  &trans
+&trans  &kp AT_SIGN  &trans     &trans  &trans           &trans       &kp B         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans       &kp LG(E)  &trans  &kp LG(D)        &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans
+        &trans       &trans     &trans  &trans           &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                        &kp LG(LA(TAB))  &kp LA(TAB)  &kp LA(F4)    &trans  &trans  &trans
             >;
         };
 
