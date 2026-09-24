@@ -61,10 +61,10 @@
 
         Zahlenzauber {
             bindings = <
-&kp N0  &kp N6        &kp N7    &kp N8     &kp N9  &kp N0          &kp KP_MULTIPLY    &trans            &kp F9            &kp F10       &kp F11  &kp F12  &trans  &trans
-        &kp N1        &kp N2    &kp N3     &kp N4  &kp N5          &trans             &sk CAPSLOCK      &kp F5            &kp F6        &kp F7   &kp F8   &trans
-        &kp KP_MINUS  &kp PLUS  &kp EQUAL  &trans  &kp KP_DIVIDE   &trans             &kp CAPSLOCK      &kp F1            &kp F2        &kp F3   &kp F4   &trans
-                                           &trans  &kp LEFT_SHIFT  &trans             &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT
+&kp N0  &kp N6        &kp N7    &kp N8     &kp N9  &kp N0          &kp KP_MULTIPLY    &trans              &kp F9            &kp F10       &kp F11  &kp F12  &trans  &trans
+        &kp N1        &kp N2    &kp N3     &kp N4  &kp N5          &trans             &sk LS(LEFT_SHIFT)  &kp F5            &kp F6        &kp F7   &kp F8   &trans
+        &kp KP_MINUS  &kp PLUS  &kp EQUAL  &trans  &kp KP_DIVIDE   &trans             &sk LEFT_ALT        &kp F1            &kp F2        &kp F3   &kp F4   &trans
+                                           &trans  &kp LEFT_SHIFT  &trans             &trans              &sk LEFT_CONTROL  &sk LEFT_GUI
             >;
         };
 
