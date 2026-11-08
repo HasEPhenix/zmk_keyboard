@@ -37,7 +37,7 @@
             //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&lt 2 ESC  &kp LA(LEFT_CONTROL)  &kp Q  &kp W  &kp E        &kp R        &kp T              &kp Y                 &lt 4 U             &lt 6 I             &lt 7 O     &lt 8 P    &lt 3 INTERNATIONAL_9  &lt 3 INTERNATIONAL_8
+&lt 3 ESC  &kp LA(LEFT_CONTROL)  &kp Q  &kp W  &kp E        &kp R        &kp T              &kp Y                 &lt 4 U             &lt 6 I             &lt 7 O     &lt 8 P    &lt 8 INTERNATIONAL_9  &lt 3 INTERNATIONAL_8
            &sk LEFT_SHIFT        &kp A  &kp S  &kp D        &kp F        &kp G              &kp INSERT            &mt LEFT_CONTROL H  &mt LEFT_COMMAND J  &mt LALT K  &kp L      &kp SEMICOLON
            &mt LEFT_CONTROL DOT  &kp Z  &kp X  &kp C        &kp V        &kp B              &lt 2 K_CONTEXT_MENU  &kp N               &kp M               &kp DOT     &kp COMMA  &kp MINUS
                                                &lt 2 ENTER  &lt 1 SPACE  &lt 5 BACKSPACE    &sk LEFT_CONTROL      &sk LEFT_COMMAND    &sk LEFT_ALT
@@ -76,10 +76,10 @@
             //                          |     |     |     |     |     |     |     |
 
             bindings = <
-&bt BT_CLR_ALL  &trans          &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &trans  &bt BT_CLR_ALL
-                &trans          &bt BT_DISC 0    &bt BT_DISC 1    &bt BT_DISC 2    &bt BT_DISC 3    &bt BT_DISC 4    &bt BT_DISC 4  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0  &trans
-                &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &none            &none          &none          &none          &none          &none          &none
-                                                                  &trans           &trans           &soft_off        &soft_off      &none          &trans
+&trans  &trans          &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &trans  &bt BT_CLR_ALL
+        &bt BT_CLR_ALL  &bt BT_DISC 0    &bt BT_DISC 1    &bt BT_DISC 2    &bt BT_DISC 3    &bt BT_DISC 4    &bt BT_DISC 4  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0  &trans
+        &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &none            &none          &none          &none          &none          &none          &none
+                                                          &trans           &trans           &soft_off        &soft_off      &none          &trans
             >;
         };
 
