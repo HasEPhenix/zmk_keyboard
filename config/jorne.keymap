@@ -52,19 +52,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_UP     &kp LA(LC(J))      &kp HOME  &kp PG_UP      &kp K_VOLUME_UP      &kp RET  &kp RET           &kp RET    &kp RET           &kp RET       &kp F11  &mt RGUI F12
-        &kp LEFT_ARROW        &kp LEFT            &kp UP             &kp DOWN  &kp RIGHT      &kp K_PLAY_PAUSE     &trans   &kp LSHFT         &kp LGUI   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RET
-        &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN2  &kp LS(LA(LC(J)))  &kp END   &kp PAGE_DOWN  &kp K_VOLUME_DOWN    &kp RET  &kp RET           &kp RET    &kp RET           &kp RET       &trans
-                                                                     &trans    &trans         &trans               &trans   &kp LEFT_CONTROL  &lt 3 DEL
+&trans  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_UP     &kp LA(LC(J))      &kp HOME              &kp PG_UP      &kp K_VOLUME_UP      &kp RET  &kp RET           &kp RET    &kp RET           &kp RET       &kp F11  &mt RGUI F12
+        &kp LEFT_ARROW        &kp LEFT            &kp UP             &kp DOWN              &kp RIGHT      &kp K_PLAY_PAUSE     &trans   &kp LSHFT         &kp LGUI   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RET
+        &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN2  &kp LS(LA(LC(J)))  &kp END               &kp PAGE_DOWN  &kp K_VOLUME_DOWN    &kp RET  &kp RET           &kp RET    &kp RET           &kp RET       &trans
+                                                                     &kp LA(LEFT_CONTROL)  &trans         &trans               &trans   &kp LEFT_CONTROL  &lt 3 DEL
             >;
         };
 
         Zahlenzauber {
             bindings = <
-&kp N0  &kp N6        &kp N7    &kp N8     &kp N9  &kp N0          &kp KP_MULTIPLY    &trans          &kp F9            &kp F10       &kp F11  &kp F12  &trans  &trans
-        &kp N1        &kp N2    &kp N3     &kp N4  &kp N5          &trans             &sk LEFT_SHIFT  &kp F5            &kp F6        &kp F7   &kp F8   &trans
-        &kp KP_MINUS  &kp PLUS  &kp EQUAL  &trans  &kp KP_DIVIDE   &trans             &sk LEFT_ALT    &kp F1            &kp F2        &kp F3   &kp F4   &trans
-                                           &trans  &kp LEFT_SHIFT  &trans             &trans          &sk LEFT_CONTROL  &sk LEFT_GUI
+&kp MINUS  &kp EQUAL       &kp N6    &kp N7     &kp N8  &kp N9                &kp N0    &trans          &kp F9            &kp F10       &kp F11  &kp F12  &trans  &trans
+           &sk LEFT_SHIFT  &kp N1    &kp N2     &kp N3  &kp N4                &kp N5    &sk LEFT_SHIFT  &kp F5            &kp F6        &kp F7   &kp F8   &trans
+           &kp KP_MINUS    &kp PLUS  &kp EQUAL  &trans  &kp KP_DIVIDE         &trans    &sk LEFT_ALT    &kp F1            &kp F2        &kp F3   &kp F4   &trans
+                                                &trans  &kp LA(LEFT_CONTROL)  &trans    &trans          &sk LEFT_CONTROL  &sk LEFT_GUI
             >;
         };
 
@@ -94,10 +94,10 @@
 
         Einhand-Alpha {
             bindings = <
-&kp LBKT  &kp SEMI  &kp P     &kp O      &kp I    &kp U           &kp Z     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-          &kp RBKT  &kp APOS  &kp L      &kp K    &kp J           &kp H     &trans  &trans  &trans  &trans  &trans  &trans
-          &kp BSLH  &kp FSLH  &kp COMMA  &kp DOT  &kp M           &kp N     &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans   &kp LEFT_SHIFT  &trans    &trans  &trans  &trans
+&kp LBKT  &kp SEMI   &kp P     &kp O     &kp I     &kp U                 &kp Z     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+          &kp RBKT   &kp APOS  &kp L     &kp K     &kp J                 &kp H     &trans  &trans  &trans  &trans  &trans  &trans
+          &kp COMMA  &kp BSLH  &kp FSLH  &kp EXCL  &kp M                 &kp N     &trans  &trans  &trans  &trans  &trans  &trans
+                                         &trans    &kp LA(LEFT_CONTROL)  &trans    &trans  &trans  &trans
             >;
         };
 
