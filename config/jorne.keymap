@@ -37,10 +37,10 @@
             //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&lt 3 ESC  &kp LA(LEFT_CONTROL)  &kp Q  &kp W  &kp E        &kp R        &kp T              &kp Y                 &lt 4 U             &lt 6 I             &lt 7 O     &lt 8 P    &lt 5 INTERNATIONAL_9  &lt 3 INTERNATIONAL_8
-           &sk LEFT_SHIFT        &kp A  &kp S  &kp D        &kp F        &kp G              &kp INSERT            &mt LEFT_CONTROL H  &mt LEFT_COMMAND J  &mt LALT K  &kp L      &kp SEMICOLON
-           &mt LEFT_CONTROL DOT  &kp Z  &kp X  &kp C        &kp V        &kp B              &lt 2 K_CONTEXT_MENU  &kp N               &kp M               &kp DOT     &kp COMMA  &kp MINUS
-                                               &lt 2 ENTER  &lt 1 SPACE  &lt 5 BACKSPACE    &sk LEFT_CONTROL      &sk LEFT_COMMAND    &sk LEFT_ALT
+&lt 3 ESC  &kp LA(LEFT_CONTROL)  &kp Q  &kp W    &kp E           &kp R        &kp T              &kp Y                 &lt 4 U             &lt 6 I             &lt 7 O     &lt 8 P    &lt 5 INTERNATIONAL_9  &lt 3 INTERNATIONAL_8
+           &sk LEFT_SHIFT        &kp A  &kp S    &kp D           &kp F        &kp G              &kp INSERT            &mt LEFT_CONTROL H  &mt LEFT_COMMAND J  &mt LALT K  &kp L      &kp SEMICOLON
+           &mt LEFT_CONTROL DOT  &kp Z  &lt 2 X  &kp C           &kp V        &kp B              &lt 2 K_CONTEXT_MENU  &kp N               &kp M               &kp DOT     &kp COMMA  &kp MINUS
+                                                 &sk LEFT_SHIFT  &lt 5 SPACE  &lt 1 BACKSPACE    &sk LEFT_CONTROL      &sk LEFT_COMMAND    &sk LEFT_ALT
             >;
         };
 
@@ -97,7 +97,7 @@
 &kp LBKT  &kp SEMI          &kp P     &kp O     &kp I         &kp U                 &kp Z     &trans  &trans  &trans  &trans  &trans  &trans  &trans
           &kp LEFT_BRACKET  &kp APOS  &kp L     &kp K         &kp J                 &kp H     &trans  &trans  &trans  &trans  &trans  &trans
           &kp COMMA         &kp BSLH  &kp EXCL  &kp QUESTION  &kp M                 &kp N     &trans  &trans  &trans  &trans  &trans  &trans
-                                                &trans        &kp LA(LEFT_CONTROL)  &trans    &trans  &trans  &trans
+                                                &trans        &sk LA(LEFT_CONTROL)  &trans    &trans  &trans  &trans
             >;
         };
 
