@@ -94,10 +94,10 @@
 
         Einhand-Alpha {
             bindings = <
-&kp LBKT  &kp SEMI   &kp P     &kp O     &kp I     &kp U                 &kp Z     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-          &kp RBKT   &kp APOS  &kp L     &kp K     &kp J                 &kp H     &trans  &trans  &trans  &trans  &trans  &trans
-          &kp COMMA  &kp BSLH  &kp FSLH  &kp EXCL  &kp M                 &kp N     &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans    &kp LA(LEFT_CONTROL)  &trans    &trans  &trans  &trans
+&kp LBKT  &kp SEMI          &kp P     &kp O     &kp I         &kp U                 &kp Z     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+          &kp LEFT_BRACKET  &kp APOS  &kp L     &kp K         &kp J                 &kp H     &trans  &trans  &trans  &trans  &trans  &trans
+          &kp COMMA         &kp BSLH  &kp EXCL  &kp QUESTION  &kp M                 &kp N     &trans  &trans  &trans  &trans  &trans  &trans
+                                                &trans        &kp LA(LEFT_CONTROL)  &trans    &trans  &trans  &trans
             >;
         };
 
